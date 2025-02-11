@@ -73,7 +73,7 @@ public:
 	}
 
 	//Supraincarcare operator=
-	Motocicleta operator=(const Motocicleta& m) {
+	Motocicleta& operator=(const Motocicleta& m) {
 		if (this != &m) {
 			delete[] this->marca;
 			delete[] this->model;
